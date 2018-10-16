@@ -51,6 +51,7 @@ public class LoginActivity extends AppCompatActivity {
                 intent=new Intent(LoginActivity.this,MainActivity.class);
                 break;
             case R.id.tv_register:
+                intent=new Intent(LoginActivity.this,SelectSexActivity.class);
                 break;
             case R.id.tv_forget_password1:
                 break;

@@ -29,4 +29,8 @@
     <string name="retrieve_input_new_password">请输入您的新密码</string>
     <string name="retrieve_input_again">请再次输入您的新密码</string>
     <string name="retrieve_complete">完成</string>
+
+    <string name="sex_select">选择您的性别</string>
+    <string name="sex_return">上一步</string>
+    <string name="sex">性别</string>
 </resources>

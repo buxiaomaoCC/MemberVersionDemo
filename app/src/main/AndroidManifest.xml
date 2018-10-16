@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.RetrieveThePasswordActivity" />
-        <activity android:name=".activity.SettingPasswordActivity"></activity>
+        <activity android:name=".activity.SettingPasswordActivity" />
+        <activity android:name=".activity.SelectSexActivity"></activity>
     </application>
 
 </manifest>
