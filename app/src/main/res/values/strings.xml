@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">MemberVersionDemo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Main界面-->
+    <string name="main_mainpager">主页</string>
+    <string name="main_onLineClinic">线上诊所</string>
+    <string name="main_circleoffriends">朋友圈</string>
+    <string name="main_shoppingMall">商城</string>
+    <string name="main_personalcenter">个人中心</string>
+
+    <!--登录界面-->
+    <string name="main_forget_password">忘记密码?</string>
+    <string name="main_login">登录</string>
+    <string name="login_new_user">新用户？点击这里注册</string>
+    <string name="login_forget_password1">忘记密码</string>
+    <string name="login_name">姓名</string>
+    <string name="login_password">密码</string>
+
+    <!--找回密码-->
+    <string name="retrieve_the_password">找回密码</string>
+    <string name="retrieve_Verification_Code">发送验证码</string>
+    <string name="retrieve_next">下一步</string>
+    <string name="retrieve_phone">电话</string>
+    <string name="retrieve_yanzheng">验证码</string>
+    <string name="retrieve_setting_password">设置密码</string>
+    <string name="retrieve_input_new_password">请输入您的新密码</string>
+    <string name="retrieve_input_again">请再次输入您的新密码</string>
+    <string name="retrieve_complete">完成</string>
+</resources>
