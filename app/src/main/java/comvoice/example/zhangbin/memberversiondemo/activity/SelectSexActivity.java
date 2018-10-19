@@ -1,6 +1,9 @@
 package comvoice.example.zhangbin.memberversiondemo.activity;
 
+import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -44,12 +47,14 @@ public class SelectSexActivity extends AppCompatActivity {
         btNext.setVisibility(View.INVISIBLE);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @OnClick({R.id.ll_men, R.id.ll_women, R.id.bt_return, R.id.bt_next})
     public void onViewClicked(View view) {
-        ivMen.setImageDrawable(getDrawable(R.drawable.gouxuanqx));
+        ivMen.setImageDrawable(this.getDrawable(R.drawable.gouxuanqx));
         ivWomen.setImageDrawable(getDrawable(R.drawable.gouxuanqx));
         btReturn.setVisibility(View.VISIBLE);
         btNext.setVisibility(View.VISIBLE);
+        Intent intent=null;
         switch (view.getId()) {
             case R.id.ll_men:
                 ivMen.setImageDrawable(getDrawable(R.drawable.gouxuan));
@@ -58,9 +63,13 @@ public class SelectSexActivity extends AppCompatActivity {
                 ivWomen.setImageDrawable(getDrawable(R.drawable.gouxuan));
                 break;
             case R.id.bt_return:
+                finish();
                 break;
             case R.id.bt_next:
+                intent=new Intent(SelectSexActivity.this,SelectAgeActivity.class);
+                startActivity(intent);
                 break;
         }
+
     }
 }

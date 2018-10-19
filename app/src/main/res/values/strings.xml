@@ -33,4 +33,15 @@
     <string name="sex_select">选择您的性别</string>
     <string name="sex_return">上一步</string>
     <string name="sex">性别</string>
+    <string name="select_age">选择您的出生年份</string>
+    <string name="birthday">出生年份</string>
+    <string name="select_height">选择您的身高</string>
+    <string name="height">身高</string>
+    <string name="select_weight">选择您的体重</string>
+    <string name="weight">体重</string>
+    <string name="Diabetes">糖尿病类型</string>
+    <string name="time">确诊时间</string>
+    <string name="register">注册</string>
+    <string name="register_agree">知情同意</string>
+    <string name="hasSend">已发送</string>
 </resources>

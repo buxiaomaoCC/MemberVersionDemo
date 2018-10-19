@@ -4,57 +4,60 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.SelectSexActivity"
+    tools:context=".activity.SelectAgeActivity"
     android:orientation="vertical">
-<include layout="@layout/toplayout"></include>
+    <include layout="@layout/toplayout"
+        />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/sex_select"
+        android:text="@string/select_height"
         android:layout_gravity="center_horizontal"
         android:textSize="@dimen/main_fragment_name"
         android:layout_marginTop="@dimen/main_height"
         android:textColor="@color/cyan"/>
-    <LinearLayout
-        android:id="@+id/ll_men"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="@dimen/main_height">
-        <ImageView
-            android:layout_width="@dimen/main_image_size"
-            android:layout_height="@dimen/main_image_size"
-            android:src="@drawable/header_icon_2"
-            android:layout_gravity="center_horizontal"/>
-        <ImageView
-            android:id="@+id/iv_men"
-            android:layout_width="@dimen/main_fragment_name"
-            android:layout_height="@dimen/main_fragment_name"
-            android:src="@drawable/gouxuanqx"
-            android:layout_marginTop="@dimen/main_fragment_name"/>
-    </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/ll_women"
+    <ImageView
+        android:layout_width="@dimen/main_image_size"
+        android:layout_height="@dimen/main_image_size"
+        android:src="@drawable/header_icon_2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/main_height"/>
+    <TextView
+        android:id="@+id/tv_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/main_height"
+        android:text="50kg"
+        android:textSize="@dimen/main_radius"
+        android:layout_gravity="center_horizontal"/>
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="@dimen/main_height">
-        <ImageView
-            android:layout_width="@dimen/main_image_size"
-            android:layout_height="@dimen/main_image_size"
-            android:src="@drawable/header_icon_2"
-            android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/top_size">
+        <comvoice.example.zhangbin.memberversiondemo.view.RulerView
+            android:id="@+id/ruler_weight"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ruler_size"
+            app:alphaEnable="true"
+            app:lineColor="@color/main_gray"
+            app:lineMaxHeight="40dp"
+            app:lineMidHeight="30dp"
+            app:lineMinHeight="20dp"
+            app:lineSpaceWidth="10dp"
+            app:lineWidth="2dip"
+            app:textColor="@color/black"
+            app:minValue="80.0"
+            app:maxValue="250.0"
+            app:perValue="1"
             />
         <ImageView
-            android:id="@+id/iv_women"
-            android:layout_width="@dimen/main_fragment_name"
-            android:layout_height="@dimen/main_fragment_name"
-            android:src="@drawable/gouxuanqx"
-            android:layout_marginTop="@dimen/main_fragment_name"/>
-    </LinearLayout>
+            android:layout_width="14.0dip"
+            android:layout_height="46.0dip"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/user_info_ruler_height"/>
+    </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

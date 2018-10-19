@@ -18,6 +18,7 @@
         app:cardCornerRadius="20dp"
         >
         <LinearLayout
+            android:id="@+id/ll_refocus"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
@@ -28,17 +29,24 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="@dimen/main_height"
                 android:src="@drawable/header_icon_2" />
-
-            <EditText
-                android:id="@+id/et_name"
+            <LinearLayout
+                android:id="@+id/ll_name"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/main_height"
-                android:layout_marginLeft="@dimen/main_height"
-                android:layout_marginRight="@dimen/main_height"
-                android:layout_marginTop="@dimen/main_height"
-                android:background="@drawable/editsharp"
-                android:textColor="@color/main_gray"
-                android:hint="@string/login_name"/>
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/main_height"
+                    android:layout_marginLeft="@dimen/main_height"
+                    android:layout_marginRight="@dimen/main_height"
+                    android:layout_marginTop="@dimen/main_height"
+                    android:background="@drawable/editsharp"
+                    android:textColor="@color/main_gray"
+                    android:hint="@string/login_name"/>
+            </LinearLayout>
+
 
             <EditText
                 android:id="@+id/et_password"

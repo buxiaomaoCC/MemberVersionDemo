@@ -41,9 +41,10 @@ public class RetrieveThePasswordActivity extends AppCompatActivity {
                 break;
             case R.id.bt_retrieve_next:
                 intent=new Intent(RetrieveThePasswordActivity.this,SettingPasswordActivity.class);
+                startActivity(intent);
                 break;
                 default:break;
         }
-        startActivity(intent);
+//        startActivity(intent);
     }
 }

@@ -8,4 +8,5 @@
     <color name="main_white">#ffffff</color>
     <color name="Darkgrey">#333643</color>
     <color name="cyan">#2FC09C</color>
+    <color name="black">#000000</color>
 </resources>

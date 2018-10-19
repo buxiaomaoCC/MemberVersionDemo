@@ -19,7 +19,13 @@
         <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.RetrieveThePasswordActivity" />
         <activity android:name=".activity.SettingPasswordActivity" />
-        <activity android:name=".activity.SelectSexActivity"></activity>
+        <activity android:name=".activity.SelectSexActivity" />
+        <activity android:name=".activity.SelectAgeActivity" />
+        <activity android:name=".activity.SelectHeightActivity" />
+        <activity android:name=".activity.SelectWeightActivity" />
+        <activity android:name=".activity.TypeOfDiabetesActivity" />
+        <activity android:name=".activity.TimeOfDiagnosisActivity" />
+        <activity android:name=".activity.RegisterActivity"></activity>
     </application>
 
 </manifest>
